@@ -1,0 +1,187 @@
+@use "./abstract/colors" as *;
+
+.services {
+    background-color: $primary-blue;
+    padding-bottom: 100px;
+
+    &__head {
+        font-size: 5rem;
+        margin-top: 0;
+        padding-top: 5rem;
+        color: $white;
+        display: inline-block;
+        vertical-align: middle;
+
+        &::before {
+            content: "";
+            height: 0.75rem;
+            display: inline-block;
+            width: 150px;
+            margin-right: 50px;
+            margin-bottom: 15px;
+            vertical-align: middle;
+            background-color: $yellow;
+        }
+    }
+    &__image__wrapper {
+        background-image: url("https://www.specbee.com/themes/custom/specbee/assets/media/icons/polygon.svg");
+        background-repeat: no-repeat;
+        width: 15rem;
+        height: 15rem;
+        background-position-x: 50%;
+        background-position-y: center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        img {
+            width: 6rem;
+            transition: 0.35s;
+        }
+        &:hover img {
+            transform: scale(0.85);
+        }
+
+        &:before {
+            background: url("https://www.specbee.com/themes/custom/specbee/assets/media/icons/polygon-line.svg")
+                no-repeat 50% / contain;
+            content: "";
+            height: 17.5rem;
+            left: -1.1875rem;
+            position: absolute;
+            top: -1.125rem;
+            width: 17.5rem;
+            z-index: -1;
+            transition: 0.25s;
+        }
+        &:hover:before {
+            transform: scale(1);
+            z-index: 0;
+        }
+    }
+    &__wrapper {
+        max-width: 75rem;
+        padding-top: 50px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+    &__card {
+        width: 30%;
+        text-align: center;
+        color: $white;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &__title {
+        font-size: 1.25rem;
+        margin-top: 30px;
+        font-weight: 800;
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    &__text {
+        font-size: 0.87rem;
+        margin-top: 5px;
+    }
+
+    @media screen and (max-width: 767px) {
+        &__wrapper {
+            padding-top: 50px;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 0;
+            display: grid;
+            text-align: center;
+        }
+        &__head {
+            font-size: 40px;
+            margin: 0 0 -23px 5px;
+            padding: 20px 0 0 5px;
+
+            span {
+                margin-left: 50px;
+            }
+
+            &:before {
+                content: "";
+                height: 0.6rem;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 40px;
+                background-color: $yellow;
+            }
+        }
+        &__card {
+            width: 100%;
+            text-align: center;
+        }
+        &__title {
+            margin-top: 20px;
+            font-size: 1.55rem;
+        }
+        &__text {
+            font-size: 0.9rem;
+            padding: 10px 70px;
+            word-spacing: 2px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__wrapper {
+            padding-top: 50px;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 0;
+            text-align: center;
+        }
+        &__head {
+            font-size: 55px;
+            margin: 0 0 -23px 5px;
+            padding: 20px 0 0 5px;
+
+            &:before {
+                content: "";
+                height: 0.6rem;
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 50px;
+                background-color: $yellow;
+                display: inline-block;
+            }
+        }
+
+        &__card {
+            width: 47%;
+            text-align: center;
+        }
+        &__title {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+        &__text {
+            font-size: 0.9rem;
+            padding: 9px 35px;
+            word-spacing: 2px;
+            line-height: 1.5;
+            text-align: center;
+
+        }
+    }
+}

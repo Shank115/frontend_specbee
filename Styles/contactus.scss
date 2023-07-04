@@ -1,0 +1,82 @@
+@use "./abstract/colors" as *;
+@use "./abstract/" as *;
+
+.contactus {
+    background-color: $primary-blue;
+
+    &__title {
+        padding-top: 6rem;
+        text-align: center;
+        color: $white;
+        font-size: 2.25rem;
+        margin: 0 95px;
+        font-weight: 800;
+    }
+    &__button {
+        background-color: $yellow;
+        border: 0.0625rem solid $yellow;
+        color: $primary-blue;
+        border-radius: 0.3125rem;
+        display: inline-block;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.125rem;
+        margin-top: 3.5rem;
+        margin-left: 540px;
+        margin-bottom: 6rem;
+        padding: 0.5rem 2.5rem;
+
+        &:hover {
+            color: $yellow;
+            background-color: $primary-blue;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__title {
+            padding-top: 6rem;
+            text-align: center;
+            color: $white;
+            margin: 0 50px;
+            font-size: 1.7rem;
+            font-weight: 800;
+        }
+        &__button {
+            background-color: $yellow;
+            border: 0.0625rem solid $yellow;
+            color: $primary-blue;
+            border-radius: 0.3125rem;
+            display: inline-block;
+            font-family: "Montserrat", sans-serif;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.125rem;
+            margin-top: 3.5rem;
+            margin-left: 30%;
+            margin-bottom: 6rem;
+            padding: 0.5rem 2.5rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__button {
+            background-color: $yellow;
+            border: 0.0625rem solid $yellow;
+            color: $primary-blue;
+            border-radius: 0.3125rem;
+            display: inline-block;
+            font-family: "Montserrat", sans-serif;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.125rem;
+            margin-top: 3.5rem;
+            margin-left: 38%;
+            margin-bottom: 6rem;
+            padding: 0.5rem 2.5rem;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+@use "./abstract/colors" as *;
+
+.container {
+    padding-top: 50px;
+
+    &__head {
+        font-size: 5rem;
+        margin-top: 0;
+        padding-top: 5rem;
+        color: $primary-blue;
+        display: inline-block;
+        vertical-align: middle;
+
+        &::before {
+            content: "";
+            height: 0.75rem;
+            display: inline-block;
+            width: 150px;
+            margin-right: 50px;
+            margin-bottom: 15px;
+            vertical-align: middle;
+            background-color: $yellow;
+        }
+    }
+    &__wrapper {
+        max-width: 70rem;
+        padding-top: 50px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3.5rem;
+    }
+    &__cards {
+        width: 30%;
+        text-align: center;
+        position: relative;
+        box-shadow: 0 0 0 transparent;
+        height: 22rem;
+        position: relative;
+        background-color: $grey;
+
+        img {
+            width: 332px;
+            height: 244px;
+        }
+    }
+    &__decs {
+        text-align: left;
+        font-size: 0.95rem;
+        margin-left: 1rem;
+    }
+    &__title {
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: $navyblue;
+        margin-top: 2px;
+        margin-left: 1rem;
+
+        &::after {
+            background-color: $primary-blue;
+            content: "";
+            height: 0.25rem;
+            position: absolute;
+            right: -0.048rem;
+            top: 6%;
+            width: 4rem;
+        }
+    }
+    &__overlay {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        background-color: $grey;
+        width: 100%;
+        transition: 0.4s ease-in-out;
+        height: 6.5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 33%;
+
+        &__head {
+            font-size: 3rem;
+            color: $primary-blue;
+            margin: 0 0 -23px 5px;
+            padding: 20px 0 0 5px;
+
+            span {
+                margin-left: 50px;
+            }
+            &:before {
+                content: "";
+                height: 0.6rem;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 40px;
+                background-color: $yellow;
+            }
+        }
+
+        &__wrapper {
+            gap: 8.5rem;
+        }
+
+        &__cards {
+            width: 79%;
+            height: auto;
+            text-align: center;
+        }
+        &__decs {
+            line-height: 1.5;
+            text-align: left;
+            font-size: 0.9rem;
+            padding: 0px 10px;
+            word-spacing: 2px;
+        }
+
+        &__title {
+            width: 70%;
+            margin-left: 25px;
+
+            &:after {
+                background-color: $primary-blue;
+                content: "";
+                height: 0.25rem;
+                position: absolute;
+                right: -0.048rem;
+                top: 7%;
+                width: 4rem;
+            }
+        }
+
+        &__overlay {
+            bottom: -110px;
+            height: 7rem;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__head {
+            font-size: 3rem;
+            color: $primary-blue;
+            margin: 0 0 -23px 5px;
+            padding: 20px 0 0 5px;
+
+            &:before {
+                content: "";
+                height: 0.6rem;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                width: 40px;
+                background-color: $yellow;
+            }
+        }
+
+        &__overlay {
+            bottom: -110px;
+            height: 7rem;
+        }
+
+        &__cards {
+            height: auto;
+            width: 43%;
+            margin-bottom: 10%;
+            text-align: center;
+        }
+        &__decs {
+            line-height: 1.5;
+            text-align: left;
+            font-size: 0.9rem;
+            padding: 0px 10px;
+            word-spacing: 2px;
+        }
+        &__title {
+            width: 70%;
+            margin-left: 25px;
+
+            &:after {
+                background-color: $primary-blue;
+                content: "";
+                height: 0.25rem;
+                position: absolute;
+                right: -0.048rem;
+                top: 7%;
+                width: 4rem;
+            }
+        }
+    }
+}
+.container__cards:hover .container__overlay {
+    height: 100%;
+}
