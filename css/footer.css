@@ -27,7 +27,6 @@
   text-decoration: none;
   color: #001186;
   padding-top: 2px;
-  font-size: 0.875rem;
 }
 .footer a:hover {
   color: #0020f6;
@@ -36,7 +35,7 @@
   width: 47%;
 }
 .footer__nav__list ul {
-  padding-left: 0;
+  padding-left: 10px;
 }
 .footer__location__heading {
   color: #001186;
@@ -113,7 +112,7 @@
     padding: 1.75rem 4rem 1.75rem 0;
   }
   .footer__right__container {
-    margin-left: 120px;
+    margin-left: 70px;
   }
   .footer__locations {
     column-count: 3;
@@ -144,4 +143,8 @@
   .footer__icons {
     margin-right: 30px;
   }
+}
+
+.fab {
+  font-size: 1.5rem;
 }

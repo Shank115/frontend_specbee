@@ -33,7 +33,6 @@
         text-decoration: none;
         color: $navyblue;
         padding-top: 2px;
-        font-size: 0.875rem;
 
         &:hover {
             color: $primary-blue;
@@ -45,7 +44,7 @@
     }
 
     &__nav__list ul {
-        padding-left: 0;
+        padding-left: 10px;
     }
 
     &__location__heading {
@@ -138,7 +137,7 @@
         }
 
         &__right__container {
-            margin-left: 120px;
+            margin-left: 70px;
         }
 
         &__locations {
@@ -175,4 +174,7 @@
             margin-right: 30px;
         }
     }
+}
+.fab {
+    font-size: 1.5rem;
 }

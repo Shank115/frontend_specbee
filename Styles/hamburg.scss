@@ -79,7 +79,7 @@ header {
         height: 0.6rem;
         width: 90px;
         display: inline-block;
-        margin: 0px 0px 22px -90px;
+        margin-left: -90px;
         background-color: $yellow;
     }
 }
@@ -99,7 +99,7 @@ header {
 .headerbar {
     background-color: $primary-blue;
 
-    &__bar {
+    &__list {
         margin: 0 15px;
         position: sticky;
         min-height: 70px;
