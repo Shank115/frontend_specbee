@@ -1,0 +1,108 @@
+@use "./abstract/mixin" as *;
+@use "./abstract/colors" as *;
+
+.ambition {
+    position: relative;
+}
+
+.banner {
+    position: relative;
+    background-image: url("https://www.specbee.com/themes/custom/specbee/assets/media/webp/billboard-bg-light.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $primary-blue;
+    background-blend-mode: multiply;
+    padding: 100px;
+}
+
+.text-container h1 {
+    color: $white;
+    margin-left: -70px;
+    line-height: 35px;
+    margin-top: 25px;
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+
+.text-container p {
+    color: $white;
+    margin-left: -70px;
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.button {
+    background-color: $yellow;
+    border: 0.0625rem solid $yellow;
+    color: $primary-blue;
+    border-radius: 0.3125rem;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    margin-top: 1.5rem;
+    margin-left: -83px;
+    margin-bottom: 6rem;
+    padding: 0.5rem 1.5rem;
+
+    &:hover {
+        color: $yellow;
+        background-color: $primary-blue;
+    }
+}
+
+.banner img {
+    display: block;
+    margin: -85px -88px;
+    width: 400px;
+    height: auto;
+}
+.trusted-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 160px -90px 5px -90px;
+    color: $white;
+}
+
+.yellow-line {
+    width: 50px;
+    height: 4px;
+    background-color: $yellow;
+    margin: 0 auto;
+}
+
+.slider img {
+    width: auto;
+    height: 200px;
+}
+
+.slide {
+    margin-top: 30px;
+    width: 446px;
+    margin-left: -131px;
+}
+
+.slick-prev,
+.slick-next {
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+
+    .banner h1 {
+        position: relative;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+}

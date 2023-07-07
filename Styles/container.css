@@ -26,7 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3.5rem;
+  gap: 1.7rem;
 }
 .container__cards {
   width: 30%;
@@ -45,13 +45,14 @@
   text-align: left;
   font-size: 0.95rem;
   margin-left: 1rem;
+  color: #0f0f0f;
 }
 .container__title {
   text-align: left;
   font-size: 1rem;
   margin-bottom: 1rem;
   color: #001186;
-  margin-top: 2px;
+  margin-top: 16px;
   margin-left: 1rem;
 }
 .container__title::after {
@@ -65,7 +66,7 @@
 }
 .container__overlay {
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   right: 0;
   overflow: hidden;
@@ -101,8 +102,9 @@
   }
   .container__cards {
     width: 79%;
-    height: auto;
+    height: 370px;
     text-align: center;
+    margin-bottom: -100px;
   }
   .container__decs {
     line-height: 1.5;
@@ -125,7 +127,7 @@
     width: 4rem;
   }
   .container__overlay {
-    bottom: -110px;
+    bottom: 15px;
     height: 7rem;
   }
 }
@@ -146,13 +148,13 @@
     background-color: #e3F307;
   }
   .container__overlay {
-    bottom: -110px;
+    bottom: 35px;
     height: 7rem;
   }
   .container__cards {
-    height: auto;
+    height: 400px;
     width: 43%;
-    margin-bottom: 10%;
+    margin-bottom: 20px;
     text-align: center;
   }
   .container__decs {

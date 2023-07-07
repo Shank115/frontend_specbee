@@ -12,23 +12,46 @@
 .insights__title::before {
   content: "";
   display: inline-block;
-  margin-bottom: 15px;
   vertical-align: middle;
   background-color: #e3F307;
   height: 0.4rem;
-  margin-right: 10px;
-  margin-left: -10px;
+  margin: 0 10px 15px -10px;
   width: 39px;
 }
+@media screen and (min-width: 1023px) {
+  .insights__title::before {
+    content: "";
+    display: inline-block;
+    margin: 0 10px 15px -10px;
+    vertical-align: middle;
+    background-color: #e3F307;
+    height: 0.4rem;
+    width: 70px;
+  }
+}
 .insights__desc {
-  margin-left: 26px;
-  margin-right: 25px;
+  margin: 0 25px 0 25px;
+}
+@media screen and (min-width: 1023px) {
+  .insights__desc {
+    margin: 0 25px 0 101px;
+    font-size: 24px;
+  }
 }
 .insights__wrapper {
   text-align: center;
   margin-top: 40px;
   padding: 0 20px;
   position: relative;
+}
+@media screen and (min-width: 1023px) {
+  .insights__wrapper {
+    display: flex;
+    margin: 30px 80px 0 80px;
+    gap: 20px;
+    border-width: 4px 4px 4px 4px;
+    border-color: #fff;
+  }
 }
 .insights__cards {
   color: #0020f6;
@@ -38,9 +61,30 @@
   margin-bottom: 20px;
   background-color: #fff;
 }
+@media screen and (min-width: 1023px) {
+  .insights__cards {
+    background-color: #fff;
+    color: #0020f6;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .insights__cards__image {
+    overflow: hidden;
+  }
+}
 .insights__cards img {
-  height: 100%;
+  height: auto;
   width: 100%;
+}
+@media screen and (min-width: 1023px) {
+  .insights__cards img {
+    height: 300px;
+    width: 365px;
+    transition: transform 0.3s ease;
+  }
+  .insights__cards img:hover {
+    transform: scale(1.2);
+  }
 }
 .insights__text {
   color: #0f0f0f;
@@ -52,10 +96,14 @@
 }
 .insights__info__head {
   font-weight: 900;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin: 10px 0 20px 0;
   padding-right: 5rem;
   position: relative;
+}
+@media screen and (min-width: 1023px) {
+  .insights__info__head {
+    font-size: 0.9rem;
+  }
 }
 .insights__info__head::after {
   background-color: #e3F307;
@@ -65,61 +113,4 @@
   right: 0;
   top: 0;
   width: 4rem;
-}
-
-@media screen and (min-width: 1023px) {
-  .insights__title {
-    font-size: 60px;
-    margin: 0 0 -20px 5px;
-    padding: 20px 0 0 5px;
-    margin-bottom: 20px;
-  }
-  .insights__title::before {
-    content: "";
-    display: inline-block;
-    margin-bottom: 15px;
-    vertical-align: middle;
-    background-color: #e3F307;
-    height: 0.4rem;
-    margin-right: 10px;
-    margin-left: -10px;
-    width: 70px;
-  }
-  .insights__desc {
-    margin-left: 101px;
-    margin-right: 25px;
-    font-size: 24px;
-  }
-  .insights__wrapper {
-    display: flex;
-    margin-left: 40px;
-    margin-right: 80px;
-    gap: 20px;
-    border-width: 4px 4px 4px 4px;
-    border-color: #fff;
-  }
-  .insights__info__head {
-    font-size: 0.9rem;
-  }
-  .insights__cards {
-    background-color: #fff;
-    color: #0020f6;
-    overflow: hidden;
-  }
-  .insights__cards img {
-    height: 300px;
-    width: 365px;
-    transition: transform 0.3s ease;
-  }
-  .insights__cards img:hover {
-    transform: scale(1.1);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .insights__info__head::after {
-    top: 540px;
-  }
-  .insights__cards {
-    width: 91%;
-  }
 }/*# sourceMappingURL=insight.css.map */

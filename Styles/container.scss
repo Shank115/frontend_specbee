@@ -29,7 +29,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 3.5rem;
+        gap: 1.7rem;
     }
     &__cards {
         width: 30%;
@@ -49,13 +49,14 @@
         text-align: left;
         font-size: 0.95rem;
         margin-left: 1rem;
+        color: $black;
     }
     &__title {
         text-align: left;
         font-size: 1rem;
         margin-bottom: 1rem;
         color: $navyblue;
-        margin-top: 2px;
+        margin-top: 16px;
         margin-left: 1rem;
 
         &::after {
@@ -109,8 +110,9 @@
 
         &__cards {
             width: 79%;
-            height: auto;
+            height: 370px;
             text-align: center;
+            margin-bottom: -100px;
         }
         &__decs {
             line-height: 1.5;
@@ -136,7 +138,7 @@
         }
 
         &__overlay {
-            bottom: -110px;
+            bottom: 15px;
             height: 7rem;
         }
     }
@@ -159,14 +161,14 @@
         }
 
         &__overlay {
-            bottom: -110px;
+            bottom: 35px;
             height: 7rem;
         }
 
         &__cards {
-            height: auto;
+            height: 400px;
             width: 43%;
-            margin-bottom: 10%;
+            margin-bottom: 20px;
             text-align: center;
         }
         &__decs {

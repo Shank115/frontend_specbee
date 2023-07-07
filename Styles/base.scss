@@ -1,3 +1,6 @@
+@use "./abstract/mixin" as *;
+@use "./abstract/colors" as *;
+
 * {
     margin: 0;
     font-family: sans-serif;
